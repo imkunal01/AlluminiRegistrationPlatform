@@ -677,6 +677,520 @@
     </div>
   </div>    
 
+    <div class="question">
+  <p><strong>51. What is a direct-mapped cache?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q51" value="a"> A cache where each memory address maps to multiple cache lines.<br>
+    <input type="radio" name="q51" value="b"> A cache where each memory address maps to a single cache line.<br>
+    <input type="radio" name="q51" value="c"> A cache that uses a fully associative mapping.<br>
+    <input type="radio" name="q51" value="d"> A cache where data is retrieved directly from the memory.<br>
+    <button type="button" onclick="revealAnswer('q51', 'b')">Reveal Answer</button>
+    <p class="answer" id="q51Answer">Correct Answer: A cache where each memory address maps to a single cache line.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>52. Which of the following does NOT improve cache performance?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q52" value="a"> Larger cache size.<br>
+    <input type="radio" name="q52" value="b"> Higher associativity.<br>
+    <input type="radio" name="q52" value="c"> Cache coherence protocols.<br>
+    <input type="radio" name="q52" value="d"> Decreased cache hit ratio.<br>
+    <button type="button" onclick="revealAnswer('q52', 'd')">Reveal Answer</button>
+    <p class="answer" id="q52Answer">Correct Answer: Decreased cache hit ratio.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>53. What does the term "cache hit ratio" refer to?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q53" value="a"> The percentage of cache misses compared to hits.<br>
+    <input type="radio" name="q53" value="b"> The frequency of cache accesses in a system.<br>
+    <input type="radio" name="q53" value="c"> The number of times data is found in the cache.<br>
+    <input type="radio" name="q53" value="d"> The amount of time it takes to access the cache.<br>
+    <button type="button" onclick="revealAnswer('q53', 'c')">Reveal Answer</button>
+    <p class="answer" id="q53Answer">Correct Answer: The number of times data is found in the cache.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>54. What is the benefit of using a two-way associative cache over a direct-mapped cache?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q54" value="a"> Faster memory access.<br>
+    <input type="radio" name="q54" value="b"> Higher hit rate due to multiple locations for each memory block.<br>
+    <input type="radio" name="q54" value="c"> Lower power consumption.<br>
+    <input type="radio" name="q54" value="d"> Improved CPU throughput.<br>
+    <button type="button" onclick="revealAnswer('q54', 'b')">Reveal Answer</button>
+    <p class="answer" id="q54Answer">Correct Answer: Higher hit rate due to multiple locations for each memory block.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>55. Which cache replacement policy selects the least recently used cache line for replacement?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q55" value="a"> FIFO.<br>
+    <input type="radio" name="q55" value="b"> Random replacement.<br>
+    <input type="radio" name="q55" value="c"> LRU (Least Recently Used).<br>
+    <input type="radio" name="q55" value="d"> MRU (Most Recently Used).<br>
+    <button type="button" onclick="revealAnswer('q55', 'c')">Reveal Answer</button>
+    <p class="answer" id="q55Answer">Correct Answer: LRU (Least Recently Used).</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>56. What is the primary advantage of a write-through cache?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q56" value="a"> It ensures data is immediately written to both the cache and the main memory.<br>
+    <input type="radio" name="q56" value="b"> It increases cache hit rate.<br>
+    <input type="radio" name="q56" value="c"> It reduces cache misses.<br>
+    <input type="radio" name="q56" value="d"> It increases memory access speed.<br>
+    <button type="button" onclick="revealAnswer('q56', 'a')">Reveal Answer</button>
+    <p class="answer" id="q56Answer">Correct Answer: It ensures data is immediately written to both the cache and the main memory.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>57. What is the main problem with a cache that is too small?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q57" value="a"> Higher memory access time due to frequent cache misses.<br>
+    <input type="radio" name="q57" value="b"> Increased power consumption.<br>
+    <input type="radio" name="q57" value="c"> Less flexibility for multiple processors.<br>
+    <input type="radio" name="q57" value="d"> Decreased CPU clock speed.<br>
+    <button type="button" onclick="revealAnswer('q57', 'a')">Reveal Answer</button>
+    <p class="answer" id="q57Answer">Correct Answer: Higher memory access time due to frequent cache misses.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>58. Which of the following cache architectures uses multiple levels of cache?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q58" value="a"> Direct-mapped cache.<br>
+    <input type="radio" name="q58" value="b"> Set-associative cache.<br>
+    <input type="radio" name="q58" value="c"> Multi-level cache.<br>
+    <input type="radio" name="q58" value="d"> Fully associative cache.<br>
+    <button type="button" onclick="revealAnswer('q58', 'c')">Reveal Answer</button>
+    <p class="answer" id="q58Answer">Correct Answer: Multi-level cache.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>59. What does the term "cache coherence" refer to?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q59" value="a"> The ability of the cache to maintain consistent data across multiple levels.<br>
+    <input type="radio" name="q59" value="b"> The uniformity of memory access patterns in the system.<br>
+    <input type="radio" name="q59" value="c"> The synchronization of data between the CPU and memory.<br>
+    <input type="radio" name="q59" value="d"> The management of cache line evictions.<br>
+    <button type="button" onclick="revealAnswer('q59', 'a')">Reveal Answer</button>
+    <p class="answer" id="q59Answer">Correct Answer: The ability of the cache to maintain consistent data across multiple levels.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>60. Which of the following is a typical benefit of increasing cache associativity?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q60" value="a"> Faster cache access times.<br>
+    <input type="radio" name="q60" value="b"> Improved cache hit rate.<br>
+    <input type="radio" name="q60" value="c"> Decreased complexity in cache management.<br>
+    <input type="radio" name="q60" value="d"> Reduced power consumption.<br>
+    <button type="button" onclick="revealAnswer('q60', 'b')">Reveal Answer</button>
+    <p class="answer" id="q60Answer">Correct Answer: Improved cache hit rate.</p>
+  </div>
+</div>
+<div class="question">
+  <p><strong>61. What does a cache miss imply?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q61" value="a"> The data was found in the cache.<br>
+    <input type="radio" name="q61" value="b"> The data was not found in the cache, and must be retrieved from main memory.<br>
+    <input type="radio" name="q61" value="c"> The cache is full and cannot store new data.<br>
+    <input type="radio" name="q61" value="d"> The cache is being cleared.<br>
+    <button type="button" onclick="revealAnswer('q61', 'b')">Reveal Answer</button>
+    <p class="answer" id="q61Answer">Correct Answer: The data was not found in the cache, and must be retrieved from main memory.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>62. What is the purpose of the Translation Lookaside Buffer (TLB)?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q62" value="a"> To map virtual addresses to physical addresses in memory.<br>
+    <input type="radio" name="q62" value="b"> To store data that is frequently accessed.<br>
+    <input type="radio" name="q62" value="c"> To manage cache coherency between processors.<br>
+    <input type="radio" name="q62" value="d"> To reduce cache misses in multi-level caches.<br>
+    <button type="button" onclick="revealAnswer('q62', 'a')">Reveal Answer</button>
+    <p class="answer" id="q62Answer">Correct Answer: To map virtual addresses to physical addresses in memory.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>63. Which of the following describes the effect of cache associativity on performance?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q63" value="a"> Higher associativity can reduce the number of cache misses but increases cache lookup time.<br>
+    <input type="radio" name="q63" value="b"> Higher associativity always improves cache access time.<br>
+    <input type="radio" name="q63" value="c"> Higher associativity increases power consumption but has no impact on performance.<br>
+    <input type="radio" name="q63" value="d"> Higher associativity reduces cache lookup time and memory access latency.<br>
+    <button type="button" onclick="revealAnswer('q63', 'a')">Reveal Answer</button>
+    <p class="answer" id="q63Answer">Correct Answer: Higher associativity can reduce the number of cache misses but increases cache lookup time.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>64. What is the primary function of a memory management unit (MMU)?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q64" value="a"> To handle interrupts and exceptions.<br>
+    <input type="radio" name="q64" value="b"> To map virtual memory addresses to physical memory addresses.<br>
+    <input type="radio" name="q64" value="c"> To manage CPU scheduling.<br>
+    <input type="radio" name="q64" value="d"> To control cache access and data consistency.<br>
+    <button type="button" onclick="revealAnswer('q64', 'b')">Reveal Answer</button>
+    <p class="answer" id="q64Answer">Correct Answer: To map virtual memory addresses to physical memory addresses.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>65. What is a page fault?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q65" value="a"> A cache miss where the required data is not found in the TLB.<br>
+    <input type="radio" name="q65" value="b"> A condition where a requested page is not in physical memory, triggering a load from disk.<br>
+    <input type="radio" name="q65" value="c"> A failure of a virtual memory translation.<br>
+    <input type="radio" name="q65" value="d"> A memory access error when the address exceeds available memory.<br>
+    <button type="button" onclick="revealAnswer('q65', 'b')">Reveal Answer</button>
+    <p class="answer" id="q65Answer">Correct Answer: A condition where a requested page is not in physical memory, triggering a load from disk.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>66. Which of the following is a technique to handle page faults?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q66" value="a"> Cache flushing.<br>
+    <input type="radio" name="q66" value="b"> Swapping the page in from the secondary storage.<br>
+    <input type="radio" name="q66" value="c"> Paging.<br>
+    <input type="radio" name="q66" value="d"> Interrupt masking.<br>
+    <button type="button" onclick="revealAnswer('q66', 'b')">Reveal Answer</button>
+    <p class="answer" id="q66Answer">Correct Answer: Swapping the page in from the secondary storage.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>67. What is a valid reason for implementing memory protection?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q67" value="a"> To prevent unauthorized access to memory by different processes.<br>
+    <input type="radio" name="q67" value="b"> To optimize memory usage.<br>
+    <input type="radio" name="q67" value="c"> To increase the size of the memory.<br>
+    <input type="radio" name="q67" value="d"> To improve the cache performance.<br>
+    <button type="button" onclick="revealAnswer('q67', 'a')">Reveal Answer</button>
+    <p class="answer" id="q67Answer">Correct Answer: To prevent unauthorized access to memory by different processes.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>68. What is the function of a stack in memory management?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q68" value="a"> To store the most frequently used variables.<br>
+    <input type="radio" name="q68" value="b"> To store function calls and local variables.<br>
+    <input type="radio" name="q68" value="c"> To manage memory page tables.<br>
+    <input type="radio" name="q68" value="d"> To manage physical memory addresses.<br>
+    <button type="button" onclick="revealAnswer('q68', 'b')">Reveal Answer</button>
+    <p class="answer" id="q68Answer">Correct Answer: To store function calls and local variables.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>69. What is the function of the base register in memory protection?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q69" value="a"> It holds the starting address of the memory space for a process.<br>
+    <input type="radio" name="q69" value="b"> It holds the end address of the memory space for a process.<br>
+    <input type="radio" name="q69" value="c"> It stores the virtual address of the next instruction.<br>
+    <input type="radio" name="q69" value="d"> It holds the address of the stack.<br>
+    <button type="button" onclick="revealAnswer('q69', 'a')">Reveal Answer</button>
+    <p class="answer" id="q69Answer">Correct Answer: It holds the starting address of the memory space for a process.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>70. What is the difference between a hardware interrupt and a software interrupt?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q70" value="a"> A hardware interrupt is generated by software, and a software interrupt is generated by hardware.<br>
+    <input type="radio" name="q70" value="b"> A hardware interrupt is initiated by the CPU, and a software interrupt is initiated by an external device.<br>
+    <input type="radio" name="q70" value="c"> A hardware interrupt is generated by an external device, and a software interrupt is triggered by a program.<br>
+    <input type="radio" name="q70" value="d"> Both hardware and software interrupts are initiated by external devices.<br>
+    <button type="button" onclick="revealAnswer('q70', 'c')">Reveal Answer</button>
+    <p class="answer" id="q70Answer">Correct Answer: A hardware interrupt is generated by an external device, and a software interrupt is triggered by a program.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>71. What is the purpose of using a superscalar architecture?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q71" value="a"> To allow the execution of multiple instructions per clock cycle.<br>
+    <input type="radio" name="q71" value="b"> To simplify instruction scheduling.<br>
+    <input type="radio" name="q71" value="c"> To reduce the complexity of pipelining.<br>
+    <input type="radio" name="q71" value="d"> To improve memory access speed.<br>
+    <button type="button" onclick="revealAnswer('q71', 'a')">Reveal Answer</button>
+    <p class="answer" id="q71Answer">Correct Answer: To allow the execution of multiple instructions per clock cycle.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>72. In a superscalar processor, what is the main limitation that can affect performance?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q72" value="a"> The size of the instruction cache.<br>
+    <input type="radio" name="q72" value="b"> The availability of execution units to handle multiple instructions simultaneously.<br>
+    <input type="radio" name="q72" value="c"> The lack of memory access speed.<br>
+    <input type="radio" name="q72" value="d"> The lack of pipeline stages.<br>
+    <button type="button" onclick="revealAnswer('q72', 'b')">Reveal Answer</button>
+    <p class="answer" id="q72Answer">Correct Answer: The availability of execution units to handle multiple instructions simultaneously.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>73. What is the main benefit of using out-of-order execution in a processor?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q73" value="a"> To increase the clock speed of the processor.<br>
+    <input type="radio" name="q73" value="b"> To improve the utilization of the CPU's execution units by executing instructions as their operands become available.<br>
+    <input type="radio" name="q73" value="c"> To reduce the number of pipeline stages.<br>
+    <input type="radio" name="q73" value="d"> To prevent hazards in the pipeline.<br>
+    <button type="button" onclick="revealAnswer('q73', 'b')">Reveal Answer</button>
+    <p class="answer" id="q73Answer">Correct Answer: To improve the utilization of the CPU's execution units by executing instructions as their operands become available.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>74. What is a structural hazard in a pipelined processor?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q74" value="a"> A situation where two instructions need the same resource simultaneously.<br>
+    <input type="radio" name="q74" value="b"> A situation where the instruction is not available for the pipeline.<br>
+    <input type="radio" name="q74" value="c"> A situation where data dependency causes a stall.<br>
+    <input type="radio" name="q74" value="d"> A situation where an instruction is waiting for an interrupt.<br>
+    <button type="button" onclick="revealAnswer('q74', 'a')">Reveal Answer</button>
+    <p class="answer" id="q74Answer">Correct Answer: A situation where two instructions need the same resource simultaneously.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>75. What is a control hazard in pipelined processors?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q75" value="a"> A hazard caused by a branch instruction that changes the flow of control.<br>
+    <input type="radio" name="q75" value="b"> A hazard caused by a memory access conflict.<br>
+    <input type="radio" name="q75" value="c"> A hazard caused by dependency between instructions.<br>
+    <input type="radio" name="q75" value="d"> A hazard caused by the processor's inability to fetch instructions in order.<br>
+    <button type="button" onclick="revealAnswer('q75', 'a')">Reveal Answer</button>
+    <p class="answer" id="q75Answer">Correct Answer: A hazard caused by a branch instruction that changes the flow of control.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>76. What is the role of the instruction pointer (IP) in a processor?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q76" value="a"> It stores the current instruction to be executed.<br>
+    <input type="radio" name="q76" value="b"> It stores the address of the next instruction to be executed.<br>
+    <input type="radio" name="q76" value="c"> It stores the result of the last executed instruction.<br>
+    <input type="radio" name="q76" value="d"> It stores the data fetched from memory.<br>
+    <button type="button" onclick="revealAnswer('q76', 'b')">Reveal Answer</button>
+    <p class="answer" id="q76Answer">Correct Answer: It stores the address of the next instruction to be executed.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>77. What is the significance of branch prediction in pipelined processors?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q77" value="a"> To predict the outcome of a branch instruction and avoid pipeline stalls.<br>
+    <input type="radio" name="q77" value="b"> To reduce the number of instructions fetched from memory.<br>
+    <input type="radio" name="q77" value="c"> To increase the size of the branch target buffer.<br>
+    <input type="radio" name="q77" value="d"> To improve the efficiency of memory access.<br>
+    <button type="button" onclick="revealAnswer('q77', 'a')">Reveal Answer</button>
+    <p class="answer" id="q77Answer">Correct Answer: To predict the outcome of a branch instruction and avoid pipeline stalls.</p>
+  </div>
+</div>
+<div class="question">
+  <p><strong>78. What is the primary purpose of a branch target buffer (BTB) in processors?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q78" value="a"> To store the results of branch instructions.<br>
+    <input type="radio" name="q78" value="b"> To predict the target address of branch instructions.<br>
+    <input type="radio" name="q78" value="c"> To store the instruction pointer address.<br>
+    <input type="radio" name="q78" value="d"> To store the data of frequently used instructions.<br>
+    <button type="button" onclick="revealAnswer('q78', 'b')">Reveal Answer</button>
+    <p class="answer" id="q78Answer">Correct Answer: To predict the target address of branch instructions.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>79. What does the term "out-of-order execution" refer to in a processor?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q79" value="a"> Executing instructions strictly in the order they are fetched.<br>
+    <input type="radio" name="q79" value="b"> Executing instructions as soon as their operands are available, regardless of the original order.<br>
+    <input type="radio" name="q79" value="c"> Executing instructions in reverse order.<br>
+    <input type="radio" name="q79" value="d"> Executing instructions that are not dependent on others.<br>
+    <button type="button" onclick="revealAnswer('q79', 'b')">Reveal Answer</button>
+    <p class="answer" id="q79Answer">Correct Answer: Executing instructions as soon as their operands are available, regardless of the original order.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>80. What is the function of the LRU (Least Recently Used) cache replacement policy?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q80" value="a"> To replace the least frequently used cache line.<br>
+    <input type="radio" name="q80" value="b"> To replace the cache line that has not been used for the longest period of time.<br>
+    <input type="radio" name="q80" value="c"> To replace the most recently used cache line.<br>
+    <input type="radio" name="q80" value="d"> To replace the cache line with the largest memory block.<br>
+    <button type="button" onclick="revealAnswer('q80', 'b')">Reveal Answer</button>
+    <p class="answer" id="q80Answer">Correct Answer: To replace the cache line that has not been used for the longest period of time.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>81. In pipelining, what is a "data hazard"?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q81" value="a"> A situation where two instructions try to access the same register at the same time.<br>
+    <input type="radio" name="q81" value="b"> A situation where an instruction depends on the result of a previous instruction.<br>
+    <input type="radio" name="q81" value="c"> A situation where an instruction cannot be executed due to a cache miss.<br>
+    <input type="radio" name="q81" value="d"> A situation where there is an interrupt request.<br>
+    <button type="button" onclick="revealAnswer('q81', 'b')">Reveal Answer</button>
+    <p class="answer" id="q81Answer">Correct Answer: A situation where an instruction depends on the result of a previous instruction.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>82. What is a "cold cache miss"?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q82" value="a"> A cache miss that occurs when the cache is full.<br>
+    <input type="radio" name="q82" value="b"> A cache miss that occurs when the cache has just been initialized or cleared.<br>
+    <input type="radio" name="q82" value="c"> A cache miss that occurs when the requested data is not in the cache.<br>
+    <input type="radio" name="q82" value="d"> A cache miss that occurs due to a cache coherence issue.<br>
+    <button type="button" onclick="revealAnswer('q82', 'b')">Reveal Answer</button>
+    <p class="answer" id="q82Answer">Correct Answer: A cache miss that occurs when the cache has just been initialized or cleared.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>83. What is the function of a memory cache?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q83" value="a"> To store data that is frequently used for faster access.<br>
+    <input type="radio" name="q83" value="b"> To store data that is temporarily unused.<br>
+    <input type="radio" name="q83" value="c"> To manage virtual memory paging.<br>
+    <input type="radio" name="q83" value="d"> To store instructions for future execution.<br>
+    <button type="button" onclick="revealAnswer('q83', 'a')">Reveal Answer</button>
+    <p class="answer" id="q83Answer">Correct Answer: To store data that is frequently used for faster access.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>84. What does "cache coherence" mean in multiprocessor systems?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q84" value="a"> Ensuring that data stored in the cache is consistent across multiple processors.<br>
+    <input type="radio" name="q84" value="b"> Ensuring that caches are always kept full.<br>
+    <input type="radio" name="q84" value="c"> Ensuring that processors do not have access to the same memory.<br>
+    <input type="radio" name="q84" value="d"> Ensuring that cache memory is always faster than main memory.<br>
+    <button type="button" onclick="revealAnswer('q84', 'a')">Reveal Answer</button>
+    <p class="answer" id="q84Answer">Correct Answer: Ensuring that data stored in the cache is consistent across multiple processors.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>85. What is the advantage of a direct-mapped cache?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q85" value="a"> It offers the fastest access time for all cache misses.<br>
+    <input type="radio" name="q85" value="b"> It is simpler to implement but may suffer from more cache misses.<br>
+    <input type="radio" name="q85" value="c"> It can store more data than other cache mapping techniques.<br>
+    <input type="radio" name="q85" value="d"> It reduces the need for cache coherency protocols.<br>
+    <button type="button" onclick="revealAnswer('q85', 'b')">Reveal Answer</button>
+    <p class="answer" id="q85Answer">Correct Answer: It is simpler to implement but may suffer from more cache misses.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>86. What is a write-through cache policy?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q86" value="a"> Data written to the cache is also immediately written to main memory.<br>
+    <input type="radio" name="q86" value="b"> Data is only written to the cache when the main memory is full.<br>
+    <input type="radio" name="q86" value="c"> Data is written to main memory after it has been written to the cache.<br>
+    <input type="radio" name="q86" value="d"> Data is not written to main memory unless the cache is full.<br>
+    <button type="button" onclick="revealAnswer('q86', 'a')">Reveal Answer</button>
+    <p class="answer" id="q86Answer">Correct Answer: Data written to the cache is also immediately written to main memory.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>87. What is the purpose of pipelining in processors?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q87" value="a"> To allow multiple instructions to be executed simultaneously, improving throughput.<br>
+    <input type="radio" name="q87" value="b"> To reduce the number of registers needed in the processor.<br>
+    <input type="radio" name="q87" value="c"> To increase the frequency of instructions fetched from memory.<br>
+    <input type="radio" name="q87" value="d"> To reduce the execution time of each individual instruction.<br>
+    <button type="button" onclick="revealAnswer('q87', 'a')">Reveal Answer</button>
+    <p class="answer" id="q87Answer">Correct Answer: To allow multiple instructions to be executed simultaneously, improving throughput.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>88. What is the significance of speculative execution in modern processors?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q88" value="a"> To predict the result of an instruction before it is actually executed to improve performance.<br>
+    <input type="radio" name="q88" value="b"> To ensure that all instructions are executed in order.<br>
+    <input type="radio" name="q88" value="c"> To execute instructions only when their operands are available.<br>
+    <input type="radio" name="q88" value="d"> To delay instruction execution until the result of previous instructions is known.<br>
+    <button type="button" onclick="revealAnswer('q88', 'a')">Reveal Answer</button>
+    <p class="answer" id="q88Answer">Correct Answer: To predict the result of an instruction before it is actually executed to improve performance.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>89. How do superscalar processors improve performance?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q89" value="a"> By executing multiple instructions per clock cycle.<br>
+    <input type="radio" name="q89" value="b"> By using a single instruction per clock cycle.<br>
+    <input type="radio" name="q89" value="c"> By reducing the number of memory accesses.<br>
+    <input type="radio" name="q89" value="d"> By reducing the number of pipeline stages.<br>
+    <button type="button" onclick="revealAnswer('q89', 'a')">Reveal Answer</button>
+    <p class="answer" id="q89Answer">Correct Answer: By executing multiple instructions per clock cycle.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>90. What does "memory protection" ensure in a computer system?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q90" value="a"> It ensures that programs cannot access memory that has not been allocated to them.<br>
+    <input type="radio" name="q90" value="b"> It ensures that the processor operates at maximum speed.<br>
+    <input type="radio" name="q90" value="c"> It ensures that memory is always cached.<br>
+    <input type="radio" name="q90" value="d"> It ensures that data is always encrypted.<br>
+    <button type="button" onclick="revealAnswer('q90', 'a')">Reveal Answer</button>
+    <p class="answer" id="q90Answer">Correct Answer: It ensures that programs cannot access memory that has not been allocated to them.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>91. What is the function of a Translation Lookaside Buffer (TLB)?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q91" value="a"> To store the most recently used memory addresses for faster access.<br>
+    <input type="radio" name="q91" value="b"> To translate virtual memory addresses to physical memory addresses.<br>
+    <input type="radio" name="q91" value="c"> To manage cache coherence in multiprocessor systems.<br>
+    <input type="radio" name="q91" value="d"> To store frequently used instructions.<br>
+    <button type="button" onclick="revealAnswer('q91', 'b')">Reveal Answer</button>
+    <p class="answer" id="q91Answer">Correct Answer: To translate virtual memory addresses to physical memory addresses.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>92. What is the difference between a hardware interrupt and a software interrupt?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q92" value="a"> A hardware interrupt is generated by an external device, while a software interrupt is generated by a program.<br>
+    <input type="radio" name="q92" value="b"> A hardware interrupt is generated by a program, while a software interrupt is generated by an external device.<br>
+    <input type="radio" name="q92" value="c"> A hardware interrupt occurs only in the presence of an error.<br>
+    <input type="radio" name="q92" value="d"> A hardware interrupt is used to stop the processor, while a software interrupt restarts it.<br>
+    <button type="button" onclick="revealAnswer('q92', 'a')">Reveal Answer</button>
+    <p class="answer" id="q92Answer">Correct Answer: A hardware interrupt is generated by an external device, while a software interrupt is generated by a program.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>93. What is a "page fault" in memory management?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q93" value="a"> A situation where a page in virtual memory cannot be found in physical memory.<br>
+    <input type="radio" name="q93" value="b"> A situation where a page is swapped out from memory.<br>
+    <input type="radio" name="q93" value="c"> A situation where memory is accessed beyond the allocated limits.<br>
+    <input type="radio" name="q93" value="d"> A situation where a memory address is corrupted.<br>
+    <button type="button" onclick="revealAnswer('q93', 'a')">Reveal Answer</button>
+    <p class="answer" id="q93Answer">Correct Answer: A situation where a page in virtual memory cannot be found in physical memory.</p>
+  </div>
+</div>
+
     <button type="submit">Submit Quiz</button>
   </form>
 
