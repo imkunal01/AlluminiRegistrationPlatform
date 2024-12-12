@@ -1357,6 +1357,522 @@
     <p class="answer" id="q107Answer">Correct Answer: A portion of code where multiple threads access shared resources.</p>
   </div>
 </div>
+<h2>unit 6 PipeLining</h2>
+    <br>
+    <div class="question">
+  <p><strong>108. What is the purpose of cache pipelining?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q108" value="a"> To improve the speed of memory accesses by processing cache requests in parallel.<br>
+    <input type="radio" name="q108" value="b"> To reduce the power consumption of the cache.<br>
+    <input type="radio" name="q108" value="c"> To manage memory allocation more efficiently.<br>
+    <input type="radio" name="q108" value="d"> To increase the size of the cache.<br>
+    <button type="button" onclick="revealAnswer('q108', 'a')">Reveal Answer</button>
+    <p class="answer" id="q108Answer">Correct Answer: To improve the speed of memory accesses by processing cache requests in parallel.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>109. What is the function of write buffers in cache memory?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q109" value="a"> To hold data temporarily before it is written to memory, improving performance.<br>
+    <input type="radio" name="q109" value="b"> To store the addresses of recently accessed memory locations.<br>
+    <input type="radio" name="q109" value="c"> To cache frequently accessed memory locations.<br>
+    <input type="radio" name="q109" value="d"> To manage cache misses.<br>
+    <button type="button" onclick="revealAnswer('q109', 'a')">Reveal Answer</button>
+    <p class="answer" id="q109Answer">Correct Answer: To hold data temporarily before it is written to memory, improving performance.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>110. What is the purpose of multilevel caches?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q110" value="a"> To store data at different levels of the memory hierarchy, improving access times.<br>
+    <input type="radio" name="q110" value="b"> To optimize data storage by compressing cache data.<br>
+    <input type="radio" name="q110" value="c"> To manage large data blocks more efficiently.<br>
+    <input type="radio" name="q110" value="d"> To reduce the size of the memory.<br>
+    <button type="button" onclick="revealAnswer('q110', 'a')">Reveal Answer</button>
+    <p class="answer" id="q110Answer">Correct Answer: To store data at different levels of the memory hierarchy, improving access times.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>111. What is the role of victim caches in memory hierarchy?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q111" value="a"> To store data that is evicted from higher-level caches to reduce misses.<br>
+    <input type="radio" name="q111" value="b"> To manage write operations in the cache.<br>
+    <input type="radio" name="q111" value="c"> To hold frequently accessed data.<br>
+    <input type="radio" name="q111" value="d"> To store data that is not used frequently.<br>
+    <button type="button" onclick="revealAnswer('q111', 'a')">Reveal Answer</button>
+    <p class="answer" id="q111Answer">Correct Answer: To store data that is evicted from higher-level caches to reduce misses.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>112. What is prefetching in the context of advanced cache systems?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q112" value="a"> The process of loading data into the cache before it is needed to reduce wait times.<br>
+    <input type="radio" name="q112" value="b"> The process of evicting data from the cache that is no longer needed.<br>
+    <input type="radio" name="q112" value="c"> The process of compressing data to optimize memory usage.<br>
+    <input type="radio" name="q112" value="d"> The process of updating data in the cache.<br>
+    <button type="button" onclick="revealAnswer('q112', 'a')">Reveal Answer</button>
+    <p class="answer" id="q112Answer">Correct Answer: The process of loading data into the cache before it is needed to reduce wait times.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>113. What is software memory optimization?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q113" value="a"> Techniques used to reduce memory usage and improve performance in software applications.<br>
+    <input type="radio" name="q113" value="b"> Techniques used to increase the size of physical memory.<br>
+    <input type="radio" name="q113" value="c"> Techniques used to cache frequently used data.<br>
+    <input type="radio" name="q113" value="d"> Techniques used to handle memory exceptions.<br>
+    <button type="button" onclick="revealAnswer('q113', 'a')">Reveal Answer</button>
+    <p class="answer" id="q113Answer">Correct Answer: Techniques used to reduce memory usage and improve performance in software applications.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>114. What is a non-blocking cache?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q114" value="a"> A cache that allows other operations to continue while data is being fetched.<br>
+    <input type="radio" name="q114" value="b"> A cache that blocks all operations until data is available.<br>
+    <input type="radio" name="q114" value="c"> A cache that only stores read operations.<br>
+    <input type="radio" name="q114" value="d"> A cache that is used to store instructions only.<br>
+    <button type="button" onclick="revealAnswer('q114', 'a')">Reveal Answer</button>
+    <p class="answer" id="q114Answer">Correct Answer: A cache that allows other operations to continue while data is being fetched.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>115. What is the purpose of vector processors?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q115" value="a"> To process large volumes of data simultaneously by performing the same operation on multiple data points.<br>
+    <input type="radio" name="q115" value="b"> To handle complex floating-point calculations.<br>
+    <input type="radio" name="q115" value="c"> To execute instructions in parallel.<br>
+    <input type="radio" name="q115" value="d"> To manage memory access.<br>
+    <button type="button" onclick="revealAnswer('q115', 'a')">Reveal Answer</button>
+    <p class="answer" id="q115Answer">Correct Answer: To process large volumes of data simultaneously by performing the same operation on multiple data points.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>116. How do GPUs optimize hardware for parallel computation?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q116" value="a"> By using many cores to perform parallel calculations for tasks like rendering graphics.<br>
+    <input type="radio" name="q116" value="b"> By reducing the clock speed of processors.<br>
+    <input type="radio" name="q116" value="c"> By using a single core to handle all computations.<br>
+    <input type="radio" name="q116" value="d"> By optimizing memory access.<br>
+    <button type="button" onclick="revealAnswer('q116', 'a')">Reveal Answer</button>
+    <p class="answer" id="q116Answer">Correct Answer: By using many cores to perform parallel calculations for tasks like rendering graphics.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>117. What does SIMD (Single Instruction, Multiple Data) refer to?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q117" value="a"> A type of parallel processing where multiple data elements are processed simultaneously with the same instruction.<br>
+    <input type="radio" name="q117" value="b"> A method of processing instructions in a sequential order.<br>
+    <input type="radio" name="q117" value="c"> A technique to speed up single-threaded applications.<br>
+    <input type="radio" name="q117" value="d"> A technique for managing memory.<br>
+    <button type="button" onclick="revealAnswer('q117', 'a')">Reveal Answer</button>
+    <p class="answer" id="q117Answer">Correct Answer: A type of parallel processing where multiple data elements are processed simultaneously with the same instruction.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>118. What is coarse-grained multithreading?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q118" value="a"> A technique where the processor switches between threads at a coarse granularity, usually after a complete instruction or a group of instructions.<br>
+    <input type="radio" name="q118" value="b"> A technique where multiple threads run simultaneously on different processors.<br>
+    <input type="radio" name="q118" value="c"> A technique that focuses on optimizing memory access.<br>
+    <input type="radio" name="q118" value="d"> A technique for managing cache coherency.<br>
+    <button type="button" onclick="revealAnswer('q118', 'a')">Reveal Answer</button>
+    <p class="answer" id="q118Answer">Correct Answer: A technique where the processor switches between threads at a coarse granularity, usually after a complete instruction or a group of instructions.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>119. What does "sequential consistency" refer to in parallel programming?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q119" value="a"> The requirement that operations in parallel programs must appear to occur in a sequential order.<br>
+    <input type="radio" name="q119" value="b"> The requirement that each thread executes its operations sequentially.<br>
+    <input type="radio" name="q119" value="c"> The requirement that memory access in a parallel program is strictly sequential.<br>
+    <input type="radio" name="q119" value="d"> The requirement that threads execute in parallel.<br>
+    <button type="button" onclick="revealAnswer('q119', 'a')">Reveal Answer</button>
+    <p class="answer" id="q119Answer">Correct Answer: The requirement that operations in parallel programs must appear to occur in a sequential order.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>120. What are memory fences in parallel programming?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q120" value="a"> Synchronization mechanisms that enforce the order of memory operations in parallel programs.<br>
+    <input type="radio" name="q120" value="b"> Mechanisms used to manage cache coherency.<br>
+    <input type="radio" name="q120" value="c"> Techniques used to reduce memory latency.<br>
+    <input type="radio" name="q120" value="d"> Techniques for optimizing CPU performance.<br>
+    <button type="button" onclick="revealAnswer('q120', 'a')">Reveal Answer</button>
+    <p class="answer" id="q120Answer">Correct Answer: Synchronization mechanisms that enforce the order of memory operations in parallel programs.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>121. What is the advantage of using multilevel caches?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q121" value="a"> It improves the hit rate by storing data at multiple levels of the memory hierarchy.<br>
+    <input type="radio" name="q121" value="b"> It reduces the size of the cache.<br>
+    <input type="radio" name="q121" value="c"> It eliminates cache misses.<br>
+    <input type="radio" name="q121" value="d"> It reduces power consumption.<br>
+    <button type="button" onclick="revealAnswer('q121', 'a')">Reveal Answer</button>
+    <p class="answer" id="q121Answer">Correct Answer: It improves the hit rate by storing data at multiple levels of the memory hierarchy.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>122. What is the role of write buffers in cache memory?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q122" value="a"> To hold data temporarily before writing it to memory, improving overall performance.<br>
+    <input type="radio" name="q122" value="b"> To store recently accessed memory addresses.<br>
+    <input type="radio" name="q122" value="c"> To store instructions for execution.<br>
+    <input type="radio" name="q122" value="d"> To manage cache misses.<br>
+    <button type="button" onclick="revealAnswer('q122', 'a')">Reveal Answer</button>
+    <p class="answer" id="q122Answer">Correct Answer: To hold data temporarily before writing it to memory, improving overall performance.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>123. What is victim cache used for?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q123" value="a"> To store data that is evicted from other caches to reduce misses.<br>
+    <input type="radio" name="q123" value="b"> To hold frequently accessed instructions.<br>
+    <input type="radio" name="q123" value="c"> To reduce the power consumption of the cache.<br>
+    <input type="radio" name="q123" value="d"> To store data that is no longer needed.<br>
+    <button type="button" onclick="revealAnswer('q123', 'a')">Reveal Answer</button>
+    <p class="answer" id="q123Answer">Correct Answer: To store data that is evicted from other caches to reduce misses.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>124. How does prefetching improve cache performance?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q124" value="a"> It loads data into the cache before it is needed, reducing wait times.<br>
+    <input type="radio" name="q124" value="b"> It compresses data to save memory space.<br>
+    <input type="radio" name="q124" value="c"> It removes unused data from the cache.<br>
+    <input type="radio" name="q124" value="d"> It increases the size of the cache.<br>
+    <button type="button" onclick="revealAnswer('q124', 'a')">Reveal Answer</button>
+    <p class="answer" id="q124Answer">Correct Answer: It loads data into the cache before it is needed, reducing wait times.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>125. What is non-blocking cache?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q125" value="a"> A cache that allows other operations to proceed while data is being fetched.<br>
+    <input type="radio" name="q125" value="b"> A cache that blocks all operations until data is available.<br>
+    <input type="radio" name="q125" value="c"> A cache that only stores read operations.<br>
+    <input type="radio" name="q125" value="d"> A cache used exclusively for instructions.<br>
+    <button type="button" onclick="revealAnswer('q125', 'a')">Reveal Answer</button>
+    <p class="answer" id="q125Answer">Correct Answer: A cache that allows other operations to proceed while data is being fetched.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>126. What is vector processing in computer systems?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q126" value="a"> A method of processing multiple data elements simultaneously using a single instruction.<br>
+    <input type="radio" name="q126" value="b"> A method of processing instructions sequentially.<br>
+    <input type="radio" name="q126" value="c"> A method of processing floating-point calculations faster.<br>
+    <input type="radio" name="q126" value="d"> A method of managing memory more efficiently.<br>
+    <button type="button" onclick="revealAnswer('q126', 'a')">Reveal Answer</button>
+    <p class="answer" id="q126Answer">Correct Answer: A method of processing multiple data elements simultaneously using a single instruction.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>127. How do GPUs optimize hardware for parallel computation?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q127" value="a"> By using multiple cores that can execute instructions in parallel.<br>
+    <input type="radio" name="q127" value="b"> By reducing clock speed to save power.<br>
+    <input type="radio" name="q127" value="c"> By handling single-threaded tasks.<br>
+    <input type="radio" name="q127" value="d"> By optimizing data storage.<br>
+    <button type="button" onclick="revealAnswer('q127', 'a')">Reveal Answer</button>
+    <p class="answer" id="q127Answer">Correct Answer: By using multiple cores that can execute instructions in parallel.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>128. What does SIMD stand for in parallel computing?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q128" value="a"> Single Instruction, Multiple Data.<br>
+    <input type="radio" name="q128" value="b"> Single Instruction, Single Data.<br>
+    <input type="radio" name="q128" value="c"> Synchronized Instruction, Multiple Data.<br>
+    <input type="radio" name="q128" value="d"> Single Input, Multiple Data.<br>
+    <button type="button" onclick="revealAnswer('q128', 'a')">Reveal Answer</button>
+    <p class="answer" id="q128Answer">Correct Answer: Single Instruction, Multiple Data.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>129. What is coarse-grained multithreading?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q129" value="a"> A technique where the processor switches between threads at a coarse granularity, typically after completing an instruction.<br>
+    <input type="radio" name="q129" value="b"> A technique where multiple threads are executed simultaneously.<br>
+    <input type="radio" name="q129" value="c"> A technique for managing memory access.<br>
+    <input type="radio" name="q129" value="d"> A technique for optimizing CPU performance.<br>
+    <button type="button" onclick="revealAnswer('q129', 'a')">Reveal Answer</button>
+    <p class="answer" id="q129Answer">Correct Answer: A technique where the processor switches between threads at a coarse granularity, typically after completing an instruction.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>130. What does sequential consistency mean in parallel programming?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q130" value="a"> The requirement that memory operations in parallel programs occur in a sequential order.<br>
+    <input type="radio" name="q130" value="b"> The requirement that all threads execute in parallel.<br>
+    <input type="radio" name="q130" value="c"> The requirement that each thread executes its operations sequentially.<br>
+    <input type="radio" name="q130" value="d"> The requirement that memory operations are not synchronized.<br>
+    <button type="button" onclick="revealAnswer('q130', 'a')">Reveal Answer</button>
+    <p class="answer" id="q130Answer">Correct Answer: The requirement that memory operations in parallel programs occur in a sequential order.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>131. What are atomic operations in parallel programming?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q131" value="a"> Operations that are executed as a single, indivisible unit to ensure synchronization.<br>
+    <input type="radio" name="q131" value="b"> Operations that execute simultaneously on different threads.<br>
+    <input type="radio" name="q131" value="c"> Operations that manage cache coherence.<br>
+    <input type="radio" name="q131" value="d"> Operations that optimize memory usage.<br>
+    <button type="button" onclick="revealAnswer('q131', 'a')">Reveal Answer</button>
+    <p class="answer" id="q131Answer">Correct Answer: Operations that are executed as a single, indivisible unit to ensure synchronization.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>132. What are memory fences used for in parallel programming?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q132" value="a"> To ensure the correct order of memory operations in a parallel program.<br>
+    <input type="radio" name="q132" value="b"> To manage the size of the memory.<br>
+    <input type="radio" name="q132" value="c"> To reduce memory latency.<br>
+    <input type="radio" name="q132" value="d"> To synchronize multiple threads.<br>
+    <button type="button" onclick="revealAnswer('q132', 'a')">Reveal Answer</button>
+    <p class="answer" id="q132Answer">Correct Answer: To ensure the correct order of memory operations in a parallel program.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>133. What is the role of locks in parallel programming?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q133" value="a"> To prevent multiple threads from accessing shared resources simultaneously.<br>
+    <input type="radio" name="q133" value="b"> To manage memory usage.<br>
+    <input type="radio" name="q133" value="c"> To reduce the size of data stored in memory.<br>
+    <input type="radio" name="q133" value="d"> To synchronize the execution of threads.<br>
+    <button type="button" onclick="revealAnswer('q133', 'a')">Reveal Answer</button>
+    <p class="answer" id="q133Answer">Correct Answer: To prevent multiple threads from accessing shared resources simultaneously.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>134. What is a semaphore in parallel programming?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q134" value="a"> A synchronization mechanism that controls access to shared resources by multiple threads.<br>
+    <input type="radio" name="q134" value="b"> A technique used to reduce cache coherence issues.<br>
+    <input type="radio" name="q134" value="c"> A method for optimizing vector processing.<br>
+    <input type="radio" name="q134" value="d"> A method for managing cache memory.<br>
+    <button type="button" onclick="revealAnswer('q134', 'a')">Reveal Answer</button>
+    <p class="answer" id="q134Answer">Correct Answer: A synchronization mechanism that controls access to shared resources by multiple threads.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>135. What is bus implementation in small multiprocessors?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q135" value="a"> A method of communication between processors using a shared data bus.<br>
+    <input type="radio" name="q135" value="b"> A method for managing memory coherence.<br>
+    <input type="radio" name="q135" value="c"> A technique for reducing power consumption.<br>
+    <input type="radio" name="q135" value="d"> A method for synchronizing processors.<br>
+    <button type="button" onclick="revealAnswer('q135', 'a')">Reveal Answer</button>
+    <p class="answer" id="q135Answer">Correct Answer: A method of communication between processors using a shared data bus.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>136. What is the purpose of cache coherence protocols in multiprocessor systems?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q136" value="a"> To maintain consistency of cached data across different processors.<br>
+    <input type="radio" name="q136" value="b"> To increase the speed of memory access.<br>
+    <input type="radio" name="q136" value="c"> To reduce the number of cache misses.<br>
+    <input type="radio" name="q136" value="d"> To reduce the power consumption of processors.<br>
+    <button type="button" onclick="revealAnswer('q136', 'a')">Reveal Answer</button>
+    <p class="answer" id="q136Answer">Correct Answer: To maintain consistency of cached data across different processors.</p>
+  </div>
+</div>
+<div class="question">
+  <p><strong>137. What is the benefit of using software memory optimization in cache management?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q137" value="a"> It helps reduce memory access latency and improves cache utilization.<br>
+    <input type="radio" name="q137" value="b"> It increases the size of the memory cache.<br>
+    <input type="radio" name="q137" value="c"> It reduces the number of threads used in processing.<br>
+    <input type="radio" name="q137" value="d"> It minimizes the number of CPU cores required.<br>
+    <button type="button" onclick="revealAnswer('q137', 'a')">Reveal Answer</button>
+    <p class="answer" id="q137Answer">Correct Answer: It helps reduce memory access latency and improves cache utilization.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>138. What is a key feature of non-blocking caches?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q138" value="a"> They allow other operations to continue while waiting for data.<br>
+    <input type="radio" name="q138" value="b"> They increase cache size to hold more data.<br>
+    <input type="radio" name="q138" value="c"> They store only instruction data.<br>
+    <input type="radio" name="q138" value="d"> They require all memory accesses to be sequential.<br>
+    <button type="button" onclick="revealAnswer('q138', 'a')">Reveal Answer</button>
+    <p class="answer" id="q138Answer">Correct Answer: They allow other operations to continue while waiting for data.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>139. How does vector software optimize the performance of vector processors?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q139" value="a"> By organizing data into vectors to perform parallel processing efficiently.<br>
+    <input type="radio" name="q139" value="b"> By using less memory.<br>
+    <input type="radio" name="q139" value="c"> By increasing the clock speed of processors.<br>
+    <input type="radio" name="q139" value="d"> By reducing the number of threads needed.<br>
+    <button type="button" onclick="revealAnswer('q139', 'a')">Reveal Answer</button>
+    <p class="answer" id="q139Answer">Correct Answer: By organizing data into vectors to perform parallel processing efficiently.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>140. What is the purpose of using atomic operations in parallel programming?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q140" value="a"> To ensure that a sequence of operations completes without interruption.<br>
+    <input type="radio" name="q140" value="b"> To prevent memory allocation errors.<br>
+    <input type="radio" name="q140" value="c"> To synchronize the clock speed of processors.<br>
+    <input type="radio" name="q140" value="d"> To increase cache hit rates.<br>
+    <button type="button" onclick="revealAnswer('q140', 'a')">Reveal Answer</button>
+    <p class="answer" id="q140Answer">Correct Answer: To ensure that a sequence of operations completes without interruption.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>141. What is the purpose of memory fences in parallel programming?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q141" value="a"> To enforce the order of memory operations, ensuring consistency.<br>
+    <input type="radio" name="q141" value="b"> To reduce memory latency.<br>
+    <input type="radio" name="q141" value="c"> To increase the size of the cache.<br>
+    <input type="radio" name="q141" value="d"> To allocate more memory for threads.<br>
+    <button type="button" onclick="revealAnswer('q141', 'a')">Reveal Answer</button>
+    <p class="answer" id="q141Answer">Correct Answer: To enforce the order of memory operations, ensuring consistency.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>142. What is SIMD in the context of multithreading?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q142" value="a"> Single Instruction, Multiple Data - processing multiple data elements with one instruction.<br>
+    <input type="radio" name="q142" value="b"> Single Input, Multiple Data - processing a single input across multiple data.<br>
+    <input type="radio" name="q142" value="c"> Synchronized Instruction, Multiple Data - synchronizing all instructions before execution.<br>
+    <input type="radio" name="q142" value="d"> Sequential Instruction, Multiple Data - executing one instruction at a time.<br>
+    <button type="button" onclick="revealAnswer('q142', 'a')">Reveal Answer</button>
+    <p class="answer" id="q142Answer">Correct Answer: Single Instruction, Multiple Data - processing multiple data elements with one instruction.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>143. What does coarse-grained multithreading involve?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q143" value="a"> Switching between threads at a coarse granularity, typically after completing an instruction.<br>
+    <input type="radio" name="q143" value="b"> Executing multiple threads simultaneously in parallel.<br>
+    <input type="radio" name="q143" value="c"> Managing memory more efficiently.<br>
+    <input type="radio" name="q143" value="d"> Synchronizing threads for more efficient execution.<br>
+    <button type="button" onclick="revealAnswer('q143', 'a')">Reveal Answer</button>
+    <p class="answer" id="q143Answer">Correct Answer: Switching between threads at a coarse granularity, typically after completing an instruction.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>144. What is the purpose of using locks in parallel programming?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q144" value="a"> To prevent multiple threads from accessing shared resources simultaneously, ensuring data consistency.<br>
+    <input type="radio" name="q144" value="b"> To improve the cache hit rate.<br>
+    <input type="radio" name="q144" value="c"> To synchronize the clock speed of the processors.<br>
+    <input type="radio" name="q144" value="d"> To optimize memory allocation.<br>
+    <button type="button" onclick="revealAnswer('q144', 'a')">Reveal Answer</button>
+    <p class="answer" id="q144Answer">Correct Answer: To prevent multiple threads from accessing shared resources simultaneously, ensuring data consistency.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>145. What is a semaphore in the context of parallel programming?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q145" value="a"> A synchronization mechanism used to control access to shared resources by multiple threads.<br>
+    <input type="radio" name="q145" value="b"> A method for optimizing vector processing.<br>
+    <input type="radio" name="q145" value="c"> A technique for reducing cache coherence issues.<br>
+    <input type="radio" name="q145" value="d"> A tool for managing memory access speed.<br>
+    <button type="button" onclick="revealAnswer('q145', 'a')">Reveal Answer</button>
+    <p class="answer" id="q145Answer">Correct Answer: A synchronization mechanism used to control access to shared resources by multiple threads.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>146. What is the main advantage of using small multiprocessors in a system?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q146" value="a"> They provide scalable performance by distributing tasks across multiple processors.<br>
+    <input type="radio" name="q146" value="b"> They reduce the power consumption of the system.<br>
+    <input type="radio" name="q146" value="c"> They optimize the memory hierarchy.<br>
+    <input type="radio" name="q146" value="d"> They increase the clock speed of processors.<br>
+    <button type="button" onclick="revealAnswer('q146', 'a')">Reveal Answer</button>
+    <p class="answer" id="q146Answer">Correct Answer: They provide scalable performance by distributing tasks across multiple processors.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>147. What is the role of cache coherence protocols in multiprocessor systems?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q147" value="a"> To ensure that all processors have a consistent view of memory.<br>
+    <input type="radio" name="q147" value="b"> To optimize memory access latency.<br>
+    <input type="radio" name="q147" value="c"> To minimize the number of cache misses.<br>
+    <input type="radio" name="q147" value="d"> To reduce the overall power consumption of the system.<br>
+    <button type="button" onclick="revealAnswer('q147', 'a')">Reveal Answer</button>
+    <p class="answer" id="q147Answer">Correct Answer: To ensure that all processors have a consistent view of memory.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>148. What does "write buffers" refer to in the context of cache pipelining?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q148" value="a"> Buffers used to temporarily hold data before writing it to memory.<br>
+    <input type="radio" name="q148" value="b"> Buffers that store frequently accessed data.<br>
+    <input type="radio" name="q148" value="c"> Buffers used to speed up the cache lookup process.<br>
+    <input type="radio" name="q148" value="d"> Buffers that manage data between different cache levels.<br>
+    <button type="button" onclick="revealAnswer('q148', 'a')">Reveal Answer</button>
+    <p class="answer" id="q148Answer">Correct Answer: Buffers used to temporarily hold data before writing it to memory.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>149. What is the benefit of multilevel caches in processor design?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q149" value="a"> They provide a hierarchy of cache levels, reducing access latency.<br>
+    <input type="radio" name="q149" value="b"> They increase the overall memory size.<br>
+    <input type="radio" name="q149" value="c"> They reduce the number of memory chips required.<br>
+    <input type="radio" name="q149" value="d"> They optimize the memory bandwidth.<br>
+    <button type="button" onclick="revealAnswer('q149', 'a')">Reveal Answer</button>
+    <p class="answer" id="q149Answer">Correct Answer: They provide a hierarchy of cache levels, reducing access latency.</p>
+  </div>
+</div>
+
+<div class="question">
+  <p><strong>150. What is the role of prefetching in cache management?</strong></p>
+  <div class="answers">
+    <input type="radio" name="q150" value="a"> To load data into the cache before it is needed to reduce access time.<br>
+    <input type="radio" name="q150" value="b"> To store more data in the main memory.<br>
+    <input type="radio" name="q150" value="c"> To remove unnecessary data from the cache.<br>
+    <input type="radio" name="q150" value="d"> To increase the size of the processor's cache.<br>
+    <button type="button" onclick="revealAnswer('q150', 'a')">Reveal Answer</button>
+    <p class="answer" id="q150Answer">Correct Answer: To load data into the cache before it is needed to reduce access time.</p>
+  </div>
+</div>
 
     <button type="submit">Submit Quiz</button>
   </form>
