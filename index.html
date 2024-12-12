@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Architecture Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .answers {
+      margin-left: 20px;
+    }
+    button {
+      margin-top: 10px;
+    }
+    .answer {
+      display: none;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Computer Architecture Quiz</h1>
+  <form id="quizForm">
+    
+    <!-- Question 1 -->
+    <div class="question">
+      <p><strong>1. What is microcode?</strong></p>
+      <div class="answers">
+        <input type="radio" name="q1" value="a"> A low-level instruction used by processors.<br>
+        <input type="radio" name="q1" value="b"> A high-level programming language.<br>
+        <input type="radio" name="q1" value="c"> A type of cache memory.<br>
+        <input type="radio" name="q1" value="d"> An operating system function.<br>
+        <button type="button" onclick="revealAnswer('q1', 'a')">Reveal Answer</button>
+        <p class="answer" id="q1Answer">Correct Answer: A low-level instruction used by processors.</p>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+      <p><strong>2. What does the ISA (Instruction Set Architecture) define?</strong></p>
+      <div class="answers">
+        <input type="radio" name="q2" value="a"> The hardware components of a computer.<br>
+        <input type="radio" name="q2" value="b"> The number of processor cores.<br>
+        <input type="radio" name="q2" value="c"> The set of instructions a processor can execute.<br>
+        <input type="radio" name="q2" value="d"> The memory hierarchy structure.<br>
+        <button type="button" onclick="revealAnswer('q2', 'c')">Reveal Answer</button>
+        <p class="answer" id="q2Answer">Correct Answer: The set of instructions a processor can execute.</p>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question">
+      <p><strong>3. Which hazard occurs when one instruction depends on the result of a previous instruction?</strong></p>
+      <div class="answers">
+        <input type="radio" name="q3" value="a"> Control hazard<br>
+        <input type="radio" name="q3" value="b"> Structural hazard<br>
+        <input type="radio" name="q3" value="c"> Data hazard<br>
+        <input type="radio" name="q3" value="d"> Branch hazard<br>
+        <button type="button" onclick="revealAnswer('q3', 'c')">Reveal Answer</button>
+        <p class="answer" id="q3Answer">Correct Answer: Data hazard</p>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question">
+      <p><strong>4. What is a superscalar processor?</strong></p>
+      <div class="answers">
+        <input type="radio" name="q4" value="a"> A processor that can execute multiple instructions simultaneously.<br>
+        <input type="radio" name="q4" value="b"> A processor with a single execution unit.<br>
+        <input type="radio" name="q4" value="c"> A type of memory management unit.<br>
+        <input type="radio" name="q4" value="d"> A processor that uses microcode exclusively.<br>
+        <button type="button" onclick="revealAnswer('q4', 'a')">Reveal Answer</button>
+        <p class="answer" id="q4Answer">Correct Answer: A processor that can execute multiple instructions simultaneously.</p>
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question">
+      <p><strong>5. What does the term "branch prediction" refer to?</strong></p>
+      <div class="answers">
+        <input type="radio" name="q5" value="a"> Predicting the execution order of instructions.<br>
+        <input type="radio" name="q5" value="b"> Guessing the outcome of a conditional branch.<br>
+        <input type="radio" name="q5" value="c"> Predicting the next instruction in the sequence.<br>
+        <input type="radio" name="q5" value="d"> Predicting the memory address of data.<br>
+        <button type="button" onclick="revealAnswer('q5', 'b')">Reveal Answer</button>
+        <p class="answer" id="q5Answer">Correct Answer: Guessing the outcome of a conditional branch.</p>
+      </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="question">
+      <p><strong>6. What is a pipeline in computer architecture?</strong></p>
+      <div class="answers">
+        <input type="radio" name="q6" value="a"> A single stage that handles all instruction types.<br>
+        <input type="radio" name="q6" value="b"> A sequence of stages that process instructions in parallel.<br>
+        <input type="radio" name="q6" value="c"> A way to connect multiple processors.<br>
+        <input type="radio" name="q6" value="d"> A technique used only for data storage.<br>
+        <button type="button" onclick="revealAnswer('q6', 'b')">Reveal Answer</button>
+        <p class="answer" id="q6Answer">Correct Answer: A sequence of stages that process instructions in parallel.</p>
+      </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question">
+      <p><strong>7. What is the purpose of the cache memory?</strong></p>
+      <div class="answers">
+        <input type="radio" name="q7" value="a"> To provide fast access to frequently used data.<br>
+        <input type="radio" name="q7" value="b"> To store all data permanently.<br>
+        <input type="radio" name="q7" value="c"> To hold the operating system.<br>
+        <input type="radio" name="q7" value="d"> To process complex calculations.<br>
+        <button type="button" onclick="revealAnswer('q7', 'a')">Reveal Answer</button>
+        <p class="answer" id="q7Answer">Correct Answer: To provide fast access to frequently used data.</p>
+      </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question">
+      <p><strong>8. What does "hazard" in pipelining refer to?</strong></p>
+      <div class="answers">
+        <input type="radio" name="q8" value="a"> An issue that prevents instructions from executing simultaneously.<br>
+        <input type="radio" name="q8" value="b"> A method of improving CPU performance.<br>
+        <input type="radio" name="q8" value="c"> A type of memory used in pipelining.<br>
+        <input type="radio" name="q8" value="d"> A stage in instruction processing.<br>
+        <button type="button" onclick="revealAnswer('q8', 'a')">Reveal Answer</button>
+        <p class="answer" id="q8Answer">Correct Answer: An issue that prevents instructions from executing simultaneously.</p>
+      </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="question">
+      <p><strong>9. Which of the following is a type of data hazard?</strong></p>
+      <div class="answers">
+        <input type="radio" name="q9" value="a"> Control hazard<br>
+        <input type="radio" name="q9" value="b"> Write-after-write hazard<br>
+        <input type="radio" name="q9" value="c"> Branch hazard<br>
+        <input type="radio" name="q9" value="d"> Instruction hazard<br>
+        <button type="button" onclick="revealAnswer('q9', 'b')">Reveal Answer</button>
+        <p class="answer" id="q9Answer">Correct Answer: Write-after-write hazard</p>
+      </div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="question">
+      <p><strong>10. What is the function of the control unit in a CPU?</strong></p>
+      <div class="answers">
+        <input type="radio" name="q10" value="a"> It stores instructions for execution.<br>
+        <input type="radio" name="q10" value="b"> It processes data.<br>
+        <input type="radio" name="q10" value="c"> It coordinates the execution of instructions.<br>
+        <input type="radio" name="q10" value="d"> It manages the input and output operations.<br>
+        <button type="button" onclick="revealAnswer('q10', 'c')">Reveal Answer</button>
+        <p class="answer" id="q10Answer">Correct Answer: It coordinates the execution of instructions.</p>
+      </div>
+    </div>
+
+    <!-- Add more questions (11-100) by following the same format -->
+     <!-- Question 11 -->
+<div class="question">
+    <p><strong>11. What is an example of a data hazard in pipelining?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q11" value="a"> Read-after-write hazard<br>
+      <input type="radio" name="q11" value="b"> Write-after-write hazard<br>
+      <input type="radio" name="q11" value="c"> Branch hazard<br>
+      <input type="radio" name="q11" value="d"> Control hazard<br>
+      <button type="button" onclick="revealAnswer('q11', 'a')">Reveal Answer</button>
+      <p class="answer" id="q11Answer">Correct Answer: Read-after-write hazard</p>
+    </div>
+  </div>
+  
+  <!-- Question 12 -->
+  <div class="question">
+    <p><strong>12. Which of the following is true about a superscalar processor?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q12" value="a"> It can only execute one instruction per clock cycle.<br>
+      <input type="radio" name="q12" value="b"> It can execute multiple instructions simultaneously.<br>
+      <input type="radio" name="q12" value="c"> It uses a single execution unit.<br>
+      <input type="radio" name="q12" value="d"> It does not support pipelining.<br>
+      <button type="button" onclick="revealAnswer('q12', 'b')">Reveal Answer</button>
+      <p class="answer" id="q12Answer">Correct Answer: It can execute multiple instructions simultaneously.</p>
+    </div>
+  </div>
+  
+  <!-- Question 13 -->
+  <div class="question">
+    <p><strong>13. What is the role of the cache memory?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q13" value="a"> To hold data that is rarely used.<br>
+      <input type="radio" name="q13" value="b"> To speed up access to frequently used data.<br>
+      <input type="radio" name="q13" value="c"> To store the operating system.<br>
+      <input type="radio" name="q13" value="d"> To manage input/output operations.<br>
+      <button type="button" onclick="revealAnswer('q13', 'b')">Reveal Answer</button>
+      <p class="answer" id="q13Answer">Correct Answer: To speed up access to frequently used data.</p>
+    </div>
+  </div>
+  
+  <!-- Question 14 -->
+  <div class="question">
+    <p><strong>14. What does branch prediction help to avoid in a pipeline?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q14" value="a"> Data hazards<br>
+      <input type="radio" name="q14" value="b"> Control hazards<br>
+      <input type="radio" name="q14" value="c"> Structural hazards<br>
+      <input type="radio" name="q14" value="d"> Memory hazards<br>
+      <button type="button" onclick="revealAnswer('q14', 'b')">Reveal Answer</button>
+      <p class="answer" id="q14Answer">Correct Answer: Control hazards</p>
+    </div>
+  </div>
+  
+  <!-- Question 15 -->
+  <div class="question">
+    <p><strong>15. In the context of pipelining, what is a structural hazard?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q15" value="a"> A hazard caused by a data dependency between instructions.<br>
+      <input type="radio" name="q15" value="b"> A hazard caused by a limited number of execution units.<br>
+      <input type="radio" name="q15" value="c"> A hazard caused by branch instructions.<br>
+      <input type="radio" name="q15" value="d"> A hazard caused by memory access.<br>
+      <button type="button" onclick="revealAnswer('q15', 'b')">Reveal Answer</button>
+      <p class="answer" id="q15Answer">Correct Answer: A hazard caused by a limited number of execution units.</p>
+    </div>
+  </div>
+  
+  <!-- Question 16 -->
+  <div class="question">
+    <p><strong>16. What does the "instruction set architecture" (ISA) of a processor define?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q16" value="a"> The hardware components of the processor.<br>
+      <input type="radio" name="q16" value="b"> The set of instructions a processor can execute.<br>
+      <input type="radio" name="q16" value="c"> The memory hierarchy.<br>
+      <input type="radio" name="q16" value="d"> The processor's cache size.<br>
+      <button type="button" onclick="revealAnswer('q16', 'b')">Reveal Answer</button>
+      <p class="answer" id="q16Answer">Correct Answer: The set of instructions a processor can execute.</p>
+    </div>
+  </div>
+  
+  <!-- Question 17 -->
+  <div class="question">
+    <p><strong>17. What is VLIW (Very Long Instruction Word) architecture?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q17" value="a"> A processor architecture that allows for simultaneous execution of multiple independent instructions.<br>
+      <input type="radio" name="q17" value="b"> A processor architecture with a single instruction per cycle.<br>
+      <input type="radio" name="q17" value="c"> A memory management technique.<br>
+      <input type="radio" name="q17" value="d"> A type of pipelining.<br>
+      <button type="button" onclick="revealAnswer('q17', 'a')">Reveal Answer</button>
+      <p class="answer" id="q17Answer">Correct Answer: A processor architecture that allows for simultaneous execution of multiple independent instructions.</p>
+    </div>
+  </div>
+  
+  <!-- Question 18 -->
+  <div class="question">
+    <p><strong>18. What is a control hazard?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q18" value="a"> A hazard caused by branch or jump instructions.<br>
+      <input type="radio" name="q18" value="b"> A hazard caused by a memory access conflict.<br>
+      <input type="radio" name="q18" value="c"> A hazard caused by an insufficient number of execution units.<br>
+      <input type="radio" name="q18" value="d"> A hazard caused by data dependencies.<br>
+      <button type="button" onclick="revealAnswer('q18', 'a')">Reveal Answer</button>
+      <p class="answer" id="q18Answer">Correct Answer: A hazard caused by branch or jump instructions.</p>
+    </div>
+  </div>
+  
+  <!-- Question 19 -->
+  <div class="question">
+    <p><strong>19. What is a pipelining hazard in a CPU?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q19" value="a"> A problem that causes a delay in instruction processing.<br>
+      <input type="radio" name="q19" value="b"> A conflict between two memory accesses.<br>
+      <input type="radio" name="q19" value="c"> A delay caused by waiting for an instruction to execute.<br>
+      <input type="radio" name="q19" value="d"> A conflict due to insufficient processor cores.<br>
+      <button type="button" onclick="revealAnswer('q19', 'a')">Reveal Answer</button>
+      <p class="answer" id="q19Answer">Correct Answer: A problem that causes a delay in instruction processing.</p>
+    </div>
+  </div>
+  
+  <!-- Question 20 -->
+  <div class="question">
+    <p><strong>20. What does a structural hazard occur in a pipeline?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q20" value="a"> A lack of available resources to execute an instruction.<br>
+      <input type="radio" name="q20" value="b"> A conflict between instructions needing the same resources.<br>
+      <input type="radio" name="q20" value="c"> A data conflict between instructions.<br>
+      <input type="radio" name="q20" value="d"> A conflict caused by a jump instruction.<br>
+      <button type="button" onclick="revealAnswer('q20', 'b')">Reveal Answer</button>
+      <p class="answer" id="q20Answer">Correct Answer: A conflict between instructions needing the same resources.</p>
+    </div>
+  </div>
+  <!-- Question 21 -->
+<div class="question">
+    <p><strong>21. What is the primary purpose of a TLB (Translation Lookaside Buffer)?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q21" value="a"> To speed up the translation of virtual addresses to physical addresses.<br>
+      <input type="radio" name="q21" value="b"> To store data temporarily.<br>
+      <input type="radio" name="q21" value="c"> To increase the size of cache memory.<br>
+      <input type="radio" name="q21" value="d"> To manage input and output devices.<br>
+      <button type="button" onclick="revealAnswer('q21', 'a')">Reveal Answer</button>
+      <p class="answer" id="q21Answer">Correct Answer: To speed up the translation of virtual addresses to physical addresses.</p>
+    </div>
+  </div>
+  
+  <!-- Question 22 -->
+  <div class="question">
+    <p><strong>22. Which of the following is an example of a "read-after-write" data hazard?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q22" value="a"> Instruction 1 writes to a register, and Instruction 2 reads from the same register.<br>
+      <input type="radio" name="q22" value="b"> Instruction 1 writes to memory, and Instruction 2 reads from memory.<br>
+      <input type="radio" name="q22" value="c"> Instruction 1 reads from a register, and Instruction 2 writes to the same register.<br>
+      <input type="radio" name="q22" value="d"> Instruction 1 writes to memory, and Instruction 2 writes to the same memory address.<br>
+      <button type="button" onclick="revealAnswer('q22', 'a')">Reveal Answer</button>
+      <p class="answer" id="q22Answer">Correct Answer: Instruction 1 writes to a register, and Instruction 2 reads from the same register.</p>
+    </div>
+  </div>
+  
+  <!-- Question 23 -->
+  <div class="question">
+    <p><strong>23. What is the primary difference between a RISC and CISC processor?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q23" value="a"> RISC uses fewer instructions, and CISC uses more complex instructions.<br>
+      <input type="radio" name="q23" value="b"> RISC has more complex instructions than CISC.<br>
+      <input type="radio" name="q23" value="c"> CISC uses fewer instructions, and RISC uses more complex instructions.<br>
+      <input type="radio" name="q23" value="d"> RISC and CISC are identical in their instruction sets.<br>
+      <button type="button" onclick="revealAnswer('q23', 'a')">Reveal Answer</button>
+      <p class="answer" id="q23Answer">Correct Answer: RISC uses fewer instructions, and CISC uses more complex instructions.</p>
+    </div>
+  </div>
+  
+  <!-- Question 24 -->
+  <div class="question">
+    <p><strong>24. In a superscalar architecture, what is the main function of the issue stage?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q24" value="a"> To execute instructions in parallel.<br>
+      <input type="radio" name="q24" value="b"> To decode and prepare instructions for execution.<br>
+      <input type="radio" name="q24" value="c"> To handle instruction scheduling.<br>
+      <input type="radio" name="q24" value="d"> To fetch instructions from memory.<br>
+      <button type="button" onclick="revealAnswer('q24', 'b')">Reveal Answer</button>
+      <p class="answer" id="q24Answer">Correct Answer: To decode and prepare instructions for execution.</p>
+    </div>
+  </div>
+  
+  <!-- Question 25 -->
+  <div class="question">
+    <p><strong>25. Which of the following is a type of pipeline hazard?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q25" value="a"> Data hazard<br>
+      <input type="radio" name="q25" value="b"> Control hazard<br>
+      <input type="radio" name="q25" value="c"> Structural hazard<br>
+      <input type="radio" name="q25" value="d"> All of the above<br>
+      <button type="button" onclick="revealAnswer('q25', 'd')">Reveal Answer</button>
+      <p class="answer" id="q25Answer">Correct Answer: All of the above</p>
+    </div>
+  </div>
+  
+  <!-- Question 26 -->
+  <div class="question">
+    <p><strong>26. What does the term "out-of-order execution" refer to in modern CPUs?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q26" value="a"> Executing instructions in the order they appear in the program.<br>
+      <input type="radio" name="q26" value="b"> Executing instructions based on available resources, regardless of their original order.<br>
+      <input type="radio" name="q26" value="c"> Storing instructions in a buffer before executing them.<br>
+      <input type="radio" name="q26" value="d"> Repeating instructions to ensure correctness.<br>
+      <button type="button" onclick="revealAnswer('q26', 'b')">Reveal Answer</button>
+      <p class="answer" id="q26Answer">Correct Answer: Executing instructions based on available resources, regardless of their original order.</p>
+    </div>
+  </div>
+  
+  <!-- Question 27 -->
+  <div class="question">
+    <p><strong>27. What is the main purpose of branch prediction in modern processors?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q27" value="a"> To reduce memory access time.<br>
+      <input type="radio" name="q27" value="b"> To speed up the execution of instructions by guessing the direction of branches.<br>
+      <input type="radio" name="q27" value="c"> To handle data hazards.<br>
+      <input type="radio" name="q27" value="d"> To allocate resources efficiently.<br>
+      <button type="button" onclick="revealAnswer('q27', 'b')">Reveal Answer</button>
+      <p class="answer" id="q27Answer">Correct Answer: To speed up the execution of instructions by guessing the direction of branches.</p>
+    </div>
+  </div>
+  
+  <!-- Question 28 -->
+  <div class="question">
+    <p><strong>28. In a pipelined CPU, which type of hazard occurs when two instructions need the same hardware resource?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q28" value="a"> Data hazard<br>
+      <input type="radio" name="q28" value="b"> Control hazard<br>
+      <input type="radio" name="q28" value="c"> Structural hazard<br>
+      <input type="radio" name="q28" value="d"> Memory hazard<br>
+      <button type="button" onclick="revealAnswer('q28', 'c')">Reveal Answer</button>
+      <p class="answer" id="q28Answer">Correct Answer: Structural hazard</p>
+    </div>
+  </div>
+  
+  <!-- Question 29 -->
+  <div class="question">
+    <p><strong>29. What is the purpose of using multiple execution units in a superscalar processor?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q29" value="a"> To execute different types of instructions simultaneously.<br>
+      <input type="radio" name="q29" value="b"> To speed up memory access.<br>
+      <input type="radio" name="q29" value="c"> To reduce the need for pipelining.<br>
+      <input type="radio" name="q29" value="d"> To handle larger instruction sets.<br>
+      <button type="button" onclick="revealAnswer('q29', 'a')">Reveal Answer</button>
+      <p class="answer" id="q29Answer">Correct Answer: To execute different types of instructions simultaneously.</p>
+    </div>
+  </div>
+  
+  <!-- Question 30 -->
+  <div class="question">
+    <p><strong>30. What does the "fetch" stage of a pipeline do?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q30" value="a"> It decodes instructions.<br>
+      <input type="radio" name="q30" value="b"> It fetches instructions from memory.<br>
+      <input type="radio" name="q30" value="c"> It executes the instructions.<br>
+      <input type="radio" name="q30" value="d"> It stores results in memory.<br>
+      <button type="button" onclick="revealAnswer('q30', 'b')">Reveal Answer</button>
+      <p class="answer" id="q30Answer">Correct Answer: It fetches instructions from memory.</p>
+    </div>
+  </div>
+  <!-- Question 31 -->
+<div class="question">
+    <p><strong>31. What is a cache miss?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q31" value="a"> When the data is found in the cache.<br>
+      <input type="radio" name="q31" value="b"> When the data is not found in the cache and needs to be fetched from memory.<br>
+      <input type="radio" name="q31" value="c"> When the cache is full.<br>
+      <input type="radio" name="q31" value="d"> When the cache is being updated.<br>
+      <button type="button" onclick="revealAnswer('q31', 'b')">Reveal Answer</button>
+      <p class="answer" id="q31Answer">Correct Answer: When the data is not found in the cache and needs to be fetched from memory.</p>
+    </div>
+  </div>
+  
+  <!-- Question 32 -->
+  <div class="question">
+    <p><strong>32. Which type of processor architecture is designed to execute a small, simple set of instructions?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q32" value="a"> CISC<br>
+      <input type="radio" name="q32" value="b"> RISC<br>
+      <input type="radio" name="q32" value="c"> VLIW<br>
+      <input type="radio" name="q32" value="d"> Superscalar<br>
+      <button type="button" onclick="revealAnswer('q32', 'b')">Reveal Answer</button>
+      <p class="answer" id="q32Answer">Correct Answer: RISC</p>
+    </div>
+  </div>
+  
+  <!-- Question 33 -->
+  <div class="question">
+    <p><strong>33. What is the main benefit of a VLIW (Very Long Instruction Word) architecture?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q33" value="a"> It executes multiple instructions in parallel in a single clock cycle.<br>
+      <input type="radio" name="q33" value="b"> It reduces the number of required instructions.<br>
+      <input type="radio" name="q33" value="c"> It uses a single instruction to perform complex tasks.<br>
+      <input type="radio" name="q33" value="d"> It allows out-of-order execution of instructions.<br>
+      <button type="button" onclick="revealAnswer('q33', 'a')">Reveal Answer</button>
+      <p class="answer" id="q33Answer">Correct Answer: It executes multiple instructions in parallel in a single clock cycle.</p>
+    </div>
+  </div>
+  
+  <!-- Question 34 -->
+  <div class="question">
+    <p><strong>34. What is the function of the instruction decode stage in a pipelined processor?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q34" value="a"> It fetches the instruction from memory.<br>
+      <input type="radio" name="q34" value="b"> It decodes the instruction to determine the operation.<br>
+      <input type="radio" name="q34" value="c"> It executes the instruction.<br>
+      <input type="radio" name="q34" value="d"> It stores the result of the instruction.<br>
+      <button type="button" onclick="revealAnswer('q34', 'b')">Reveal Answer</button>
+      <p class="answer" id="q34Answer">Correct Answer: It decodes the instruction to determine the operation.</p>
+    </div>
+  </div>
+  
+  <!-- Question 35 -->
+  <div class="question">
+    <p><strong>35. What is the purpose of instruction pipelining in modern processors?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q35" value="a"> To execute multiple instructions in parallel.<br>
+      <input type="radio" name="q35" value="b"> To increase the clock speed of the processor.<br>
+      <input type="radio" name="q35" value="c"> To break down instructions into smaller tasks.<br>
+      <input type="radio" name="q35" value="d"> To execute instructions faster by overlapping different stages of processing.<br>
+      <button type="button" onclick="revealAnswer('q35', 'd')">Reveal Answer</button>
+      <p class="answer" id="q35Answer">Correct Answer: To execute instructions faster by overlapping different stages of processing.</p>
+    </div>
+  </div>
+  
+  <!-- Question 36 -->
+  <div class="question">
+    <p><strong>36. In a superscalar processor, what is the role of the issue stage?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q36" value="a"> To fetch instructions from memory.<br>
+      <input type="radio" name="q36" value="b"> To dispatch instructions to execution units.<br>
+      <input type="radio" name="q36" value="c"> To decode instructions.<br>
+      <input type="radio" name="q36" value="d"> To store results into memory.<br>
+      <button type="button" onclick="revealAnswer('q36', 'b')">Reveal Answer</button>
+      <p class="answer" id="q36Answer">Correct Answer: To dispatch instructions to execution units.</p>
+    </div>
+  </div>
+  
+  <!-- Question 37 -->
+  <div class="question">
+    <p><strong>37. What is a key advantage of out-of-order execution in processors?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q37" value="a"> It minimizes the impact of pipeline hazards.<br>
+      <input type="radio" name="q37" value="b"> It speeds up the execution of instructions.<br>
+      <input type="radio" name="q37" value="c"> It simplifies the instruction set architecture.<br>
+      <input type="radio" name="q37" value="d"> It reduces the need for pipelining.<br>
+      <button type="button" onclick="revealAnswer('q37', 'a')">Reveal Answer</button>
+      <p class="answer" id="q37Answer">Correct Answer: It minimizes the impact of pipeline hazards.</p>
+    </div>
+  </div>
+  
+  <!-- Question 38 -->
+  <div class="question">
+    <p><strong>38. What is a structural hazard in a pipeline?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q38" value="a"> When two instructions try to access the same resource simultaneously.<br>
+      <input type="radio" name="q38" value="b"> When data dependencies between instructions cause delays.<br>
+      <input type="radio" name="q38" value="c"> When a branch instruction causes a delay in execution.<br>
+      <input type="radio" name="q38" value="d"> When the pipeline is stalled due to cache misses.<br>
+      <button type="button" onclick="revealAnswer('q38', 'a')">Reveal Answer</button>
+      <p class="answer" id="q38Answer">Correct Answer: When two instructions try to access the same resource simultaneously.</p>
+    </div>
+  </div>
+  
+  <!-- Question 39 -->
+  <div class="question">
+    <p><strong>39. What is a control hazard in pipelined processors?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q39" value="a"> When an instruction depends on the result of a previous instruction.<br>
+      <input type="radio" name="q39" value="b"> When the processor is waiting for a branch decision.<br>
+      <input type="radio" name="q39" value="c"> When two instructions use the same register.<br>
+      <input type="radio" name="q39" value="d"> When memory is being accessed.<br>
+      <button type="button" onclick="revealAnswer('q39', 'b')">Reveal Answer</button>
+      <p class="answer" id="q39Answer">Correct Answer: When the processor is waiting for a branch decision.</p>
+    </div>
+  </div>
+  
+  <!-- Question 40 -->
+  <div class="question">
+    <p><strong>40. What is the primary purpose of branch prediction in processors?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q40" value="a"> To reduce the time spent waiting for branch decisions.<br>
+      <input type="radio" name="q40" value="b"> To increase the number of instructions executed per cycle.<br>
+      <input type="radio" name="q40" value="c"> To predict the results of branch instructions.<br>
+      <input type="radio" name="q40" value="d"> To eliminate control hazards.<br>
+      <button type="button" onclick="revealAnswer('q40', 'a')">Reveal Answer</button>
+      <p class="answer" id="q40Answer">Correct Answer: To reduce the time spent waiting for branch decisions.</p>
+    </div>
+  </div>
+ <!-- Question 41 -->
+<div class="question">
+    <p><strong>41. What does the term "cache hit" mean?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q41" value="a"> When data is found in the cache.<br>
+      <input type="radio" name="q41" value="b"> When the cache is empty.<br>
+      <input type="radio" name="q41" value="c"> When data is fetched from the main memory.<br>
+      <input type="radio" name="q41" value="d"> When the cache is being updated.<br>
+      <button type="button" onclick="revealAnswer('q41', 'a')">Reveal Answer</button>
+      <p class="answer" id="q41Answer">Correct Answer: When data is found in the cache.</p>
+    </div>
+  </div>
+  
+  <!-- Question 42 -->
+  <div class="question">
+    <p><strong>42. Which of the following is a primary characteristic of a RISC processor?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q42" value="a"> Large number of instructions.<br>
+      <input type="radio" name="q42" value="b"> Fixed-length instructions.<br>
+      <input type="radio" name="q42" value="c"> Complex addressing modes.<br>
+      <input type="radio" name="q42" value="d"> Complex instruction set.<br>
+      <button type="button" onclick="revealAnswer('q42', 'b')">Reveal Answer</button>
+      <p class="answer" id="q42Answer">Correct Answer: Fixed-length instructions.</p>
+    </div>
+  </div>
+  
+  <!-- Question 43 -->
+  <div class="question">
+    <p><strong>43. What is the advantage of using out-of-order execution in a CPU?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q43" value="a"> It minimizes pipeline stalls and hazards.<br>
+      <input type="radio" name="q43" value="b"> It reduces the number of registers.<br>
+      <input type="radio" name="q43" value="c"> It increases the number of instructions executed.<br>
+      <input type="radio" name="q43" value="d"> It simplifies the control logic.<br>
+      <button type="button" onclick="revealAnswer('q43', 'a')">Reveal Answer</button>
+      <p class="answer" id="q43Answer">Correct Answer: It minimizes pipeline stalls and hazards.</p>
+    </div>
+  </div>
+  
+  <!-- Question 44 -->
+  <div class="question">
+    <p><strong>44. What is the purpose of a branch predictor in a processor?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q44" value="a"> To predict the outcome of branches and reduce delays.<br>
+      <input type="radio" name="q44" value="b"> To store branch instructions.<br>
+      <input type="radio" name="q44" value="c"> To increase the number of instructions executed.<br>
+      <input type="radio" name="q44" value="d"> To execute branches out-of-order.<br>
+      <button type="button" onclick="revealAnswer('q44', 'a')">Reveal Answer</button>
+      <p class="answer" id="q44Answer">Correct Answer: To predict the outcome of branches and reduce delays.</p>
+    </div>
+  </div>
+  
+  <!-- Question 45 -->
+  <div class="question">
+    <p><strong>45. What is a pipeline hazard?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q45" value="a"> A delay in the pipeline due to resource conflicts or dependencies.<br>
+      <input type="radio" name="q45" value="b"> A type of instruction.<br>
+      <input type="radio" name="q45" value="c"> A problem with memory access.<br>
+      <input type="radio" name="q45" value="d"> A method of improving CPU speed.<br>
+      <button type="button" onclick="revealAnswer('q45', 'a')">Reveal Answer</button>
+      <p class="answer" id="q45Answer">Correct Answer: A delay in the pipeline due to resource conflicts or dependencies.</p>
+    </div>
+  </div>
+  
+  <!-- Question 46 -->
+  <div class="question">
+    <p><strong>46. What is the primary reason for using instruction pipelining in modern processors?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q46" value="a"> To reduce the number of instructions.<br>
+      <input type="radio" name="q46" value="b"> To increase the throughput of instruction execution.<br>
+      <input type="radio" name="q46" value="c"> To simplify the instruction set.<br>
+      <input type="radio" name="q46" value="d"> To reduce the clock speed.<br>
+      <button type="button" onclick="revealAnswer('q46', 'b')">Reveal Answer</button>
+      <p class="answer" id="q46Answer">Correct Answer: To increase the throughput of instruction execution.</p>
+    </div>
+  </div>
+  
+  <!-- Question 47 -->
+  <div class="question">
+    <p><strong>47. What is the role of the "fetch" stage in a pipeline?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q47" value="a"> To decode the instruction.<br>
+      <input type="radio" name="q47" value="b"> To execute the instruction.<br>
+      <input type="radio" name="q47" value="c"> To fetch the instruction from memory.<br>
+      <input type="radio" name="q47" value="d"> To store the result of the instruction.<br>
+      <button type="button" onclick="revealAnswer('q47', 'c')">Reveal Answer</button>
+      <p class="answer" id="q47Answer">Correct Answer: To fetch the instruction from memory.</p>
+    </div>
+  </div>
+  
+  <!-- Question 48 -->
+  <div class="question">
+    <p><strong>48. Which of the following best describes a cache line?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q48" value="a"> A unit of memory transfer between the cache and main memory.<br>
+      <input type="radio" name="q48" value="b"> The smallest unit of memory that is fetched from memory.<br>
+      <input type="radio" name="q48" value="c"> A collection of instructions.<br>
+      <input type="radio" name="q48" value="d"> A group of cache blocks.<br>
+      <button type="button" onclick="revealAnswer('q48', 'b')">Reveal Answer</button>
+      <p class="answer" id="q48Answer">Correct Answer: The smallest unit of memory that is fetched from memory.</p>
+    </div>
+  </div>
+  
+  <!-- Question 49 -->
+  <div class="question">
+    <p><strong>49. What is the purpose of a branch target buffer (BTB)?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q49" value="a"> To store the target addresses of branches to improve prediction accuracy.<br>
+      <input type="radio" name="q49" value="b"> To store the results of branch predictions.<br>
+      <input type="radio" name="q49" value="c"> To fetch branch instructions from memory.<br>
+      <input type="radio" name="q49" value="d"> To execute branch instructions.<br>
+      <button type="button" onclick="revealAnswer('q49', 'a')">Reveal Answer</button>
+      <p class="answer" id="q49Answer">Correct Answer: To store the target addresses of branches to improve prediction accuracy.</p>
+    </div>
+  </div>
+  
+  <!-- Question 50 -->
+  <div class="question">
+    <p><strong>50. What is the purpose of cache coherence protocols in multiprocessor systems?</strong></p>
+    <div class="answers">
+      <input type="radio" name="q50" value="a"> To maintain consistency of cached data across different processors.<br>
+      <input type="radio" name="q50" value="b"> To increase the speed of memory access.<br>
+      <input type="radio" name="q50" value="c"> To reduce the number of cache misses.<br>
+      <input type="radio" name="q50" value="d"> To reduce the power consumption of processors.<br>
+      <button type="button" onclick="revealAnswer('q50', 'a')">Reveal Answer</button>
+      <p class="answer" id="q50Answer">Correct Answer: To maintain consistency of cached data across different processors.</p>
+    </div>
+  </div>    
+
+    <button type="submit">Submit Quiz</button>
+  </form>
+
+  <script>
+    function revealAnswer(questionId, correctAnswer) {
+      const selectedOption = document.querySelector(`input[name="${questionId}"]:checked`);
+      const answerText = document.getElementById(`${questionId}Answer`);
+      
+      if (selectedOption) {
+        if (selectedOption.value === correctAnswer) {
+          answerText.style.color = 'green';
+        } else {
+          answerText.style.color = 'red';
+        }
+      }
+      answerText.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
